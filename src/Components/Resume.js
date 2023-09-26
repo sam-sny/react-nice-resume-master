@@ -18,12 +18,12 @@ class Resume extends Component {
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
-          <h3>{education.school}</h3>
+          <h3>University Of Agriculture Abeokuta</h3>
           <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
+            computer-science <span>&bull;</span>
+            <em className="date">graduated in 2020</em>
           </p>
-          <p>{education.description}</p>
+          <p>I gained proficiency in various programming languages, which serves as the foundation for developing software and applications. I also gained understanding on how to efficiently organize and manipulate data which is crucial for solving real-world problems and optimizing computer programs.</p>
         </div>
       );
     });
@@ -31,12 +31,12 @@ class Resume extends Component {
     const work = this.props.data.work.map(function (work) {
       return (
         <div key={work.company}>
-          <h3>{work.company}</h3>
+          <h3>Awesome Design Studio</h3>
           <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
+          Senior UX God
+            <span>&bull;</span> <em className="date">March 2017 - February 2018</em>
           </p>
-          <p>{work.description}</p>
+          <p>At Awesome Design Studio, I was at the forefront of turning design concepts into seamless, intuitive, and visually stunning web applications. I worked closely with world-class designers and collaborated with cross-functional teams to craft user experiences that set new industry standards.</p>
         </div>
       );
     });

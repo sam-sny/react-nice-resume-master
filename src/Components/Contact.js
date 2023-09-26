@@ -24,7 +24,7 @@ class Contact extends Component {
             </div>
 
             <div className="ten columns">
-              <p className="lead">{message}</p>
+              <p className="lead">Write a message to get in contact with me</p>
             </div>
           </div>
         </Fade>
@@ -108,12 +108,11 @@ class Contact extends Component {
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
                 <p className="address">
-                  {name}
+                  SAM_SNY
                   <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
+                  4 ikot oko Idio <br />
+                  Uyo, Akwa-Ibom-State 502104<br />
+                  <span>09167380934</span>
                 </p>
               </div>
 

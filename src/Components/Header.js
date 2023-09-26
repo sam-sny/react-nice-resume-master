@@ -67,7 +67,7 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
+                <a href="https://github.com/sam-sny/react-nice-resume-master" className="button btn project-btn">
                   <i className="fa fa-book"></i>Project
                 </a>
                 <a href="https://github.com/sam-sny" className="button btn github-btn">

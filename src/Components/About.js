@@ -26,36 +26,31 @@ class About extends Component {
                 className="profile-pic"
                 src={pic1}
                 alt="Nordic Giant Profile Pic"
+                style={{objectFit:"cover"}}
               />
             </div>
             <div className="nine columns main-col">
               <h2>About Me</h2>
 
-              <p>{bio}</p>
+              <p>Hello! I'm SAM_SNY, a passionate Front-End Developer with a strong affinity for crafting exceptional user experiences using React.js. With a creative mindset and an eye for detail, I thrive on turning innovative ideas into interactive and user-friendly web applications.</p>
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-                    <span>{name}</span>
+                    <span>SAM_SNY Projects</span>
                     <br />
                     <span>
-                      {street}
+                      4 Ikot Oko Idio
                       <br />
-                      {city} {state}, {zip}
+                      Uyo Akwa-Ibom, 502146
                     </span>
                     <br />
-                    <span>{phone}</span>
+                    <span>09167380934</span>
                     <br />
-                    <span>{email}</span>
+                    <span>sampsonekpo6@gmail.com</span>
                   </p>
                 </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
-                </div>
+                
               </div>
             </div>
           </div>
