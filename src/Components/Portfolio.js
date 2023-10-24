@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 import Homepage from "../asset/Homepage.jpg";
 
 let id = 0;

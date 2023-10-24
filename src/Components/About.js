@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 import pic1 from "../asset/pic1.jpg";
 
 class About extends Component {
