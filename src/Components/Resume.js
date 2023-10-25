@@ -15,22 +15,19 @@ class Resume extends Component {
     if (!this.props.data) return null;
 
     const skillmessage = this.props.data.skillmessage;
-    const education = this.props.data.education.map(function (education) {
-      return (
-        <div key={education.school}>
+    const education = (
+          <div key="education">
           <h3>University Of Agriculture Abeokuta</h3>
           <p className="info">
             computer-science <span>&bull;</span>
             <em className="date">graduated in 2020</em>
           </p>
           <p>I gained proficiency in various programming languages, which serves as the foundation for developing software and applications. I also gained understanding on how to efficiently organize and manipulate data which is crucial for solving real-world problems and optimizing computer programs.</p>
-        </div>
-      );
-    });
+        </div>);
+      
 
-    const work = this.props.data.work.map(function (work) {
-      return (
-        <div key={work.company}>
+    const work = (
+        <div key="work">
           <h3>Awesome Design Studio</h3>
           <p className="info">
           Senior UX God
@@ -39,7 +36,7 @@ class Resume extends Component {
           <p>At Awesome Design Studio, I was at the forefront of turning design concepts into seamless, intuitive, and visually stunning web applications. I worked closely with world-class designers and collaborated with cross-functional teams to craft user experiences that set new industry standards.</p>
         </div>
       );
-    });
+   
 
     const skills = this.props.data.skills.map((skills) => {
       const backgroundColor = this.getRandomColor();

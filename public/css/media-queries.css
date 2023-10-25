@@ -19,6 +19,24 @@
       margin: 0 auto 12px auto;
    }
 
+   #portfolio-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: space-evenly;
+      gap: 24px;
+      
+    }
+    
+    .portfolio-item .item-wrap{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      
+       /* Adjust this as needed */
+    }
+
 }
 
 /* screenwidth less than 900px
@@ -256,6 +274,28 @@
    /* ----------------------------------------------------------------- */
    #portfolio-wrapper .columns { margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
+
+   #portfolio-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: space-evenly;
+      gap: 24px;
+      
+    }
+    
+    .portfolio-item .item-wrap {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      
+       /* Adjust this as needed */
+    }
+
+    
+    
+
 
 
    /* Testimonials Section

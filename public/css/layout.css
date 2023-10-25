@@ -438,9 +438,14 @@ ul#nav li.current a { color: #fe6928; }
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.portfolio-item .item-wrap a {
+
+.item-wrap {
+   margin: 20px;
+}
+.portfolio-item .item-wrap a{
    display: block;
    cursor: pointer;
+   
 }
 
 /* overlay */

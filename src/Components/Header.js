@@ -62,7 +62,7 @@ class Header extends Component {
               <h1 className="responsive-headline">SAM-SNY</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>I am a web development engineer and I use react and vue.js to develop pages.</h3>
+              <h3>I am a web development engineer and I use react.js and next.js to develop dynamic web applications & web pages.</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>

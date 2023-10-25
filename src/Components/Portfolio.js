@@ -31,9 +31,13 @@ class Portfolio extends Component {
                 id="portfolio-wrapper"
                 className="bgrid-quarters s-bgrid-thirds cf"
               >
-                <span><a href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a></span>
-                <span style={{marginLeft:"20px"}}><a href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a></span>
-             
+                <div className="portfolio-item">
+                <a className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                </div>
+
               </div>
             </div>
           </div>

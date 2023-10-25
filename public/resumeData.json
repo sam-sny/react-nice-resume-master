@@ -46,7 +46,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Here are my skills",
     "education":[
       {
         "school":"University?",
@@ -77,32 +77,32 @@
     ],
     "skills":[
       {
-        "name":"Python",
-        "level":"60%"
+        "name":"NextJs",
+        "level":"80%"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "name":"TailWInd",
+        "level":"85%"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"90%"
       },
       {
         "name":"CSS",
         "level":"90%"
       },
       {
-        "name":"PHP",
+        "name":"NodeJs",
         "level":"80%"
       },
       {
-        "name":"Swift",
+        "name":"C",
         "level":"50%"
       },
       {
-        "name":"JAVA",
-        "level":"80%"
+        "name":"Python",
+        "level":"50%"
       }
     ]
   },
