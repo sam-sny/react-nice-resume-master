@@ -30,7 +30,7 @@ class Contact extends Component {
         </Fade>
 
         <div className="row">
-          <Slide left duration={1000}>
+      {/*  <Slide left duration={1000}> */}
             <div className="eight columns">
               <form action="mailto:sampsonekpo6@gmail.com" method="post" id="contactForm" name="contactForm">
                 <fieldset>
@@ -89,14 +89,14 @@ class Contact extends Component {
                   <div>
                     <button className="submit">Submit</button>
                     <span id="image-loader">
-                      <img alt="" src="images/loader.gif" />
+                      <img alt="ima" src="images/loader.gif" />
                     </span>
                   </div>
                 </fieldset>
               </form>
 
             </div>
-          </Slide>
+       {/*   </Slide> */}
 
           <Slide right duration={1000}>
             <aside className="four columns footer-widgets">
