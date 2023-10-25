@@ -32,7 +32,7 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+              <form action="mailto:sampsonekpo6@gmail.com" method="post" id="contactForm" name="contactForm">
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -95,11 +95,6 @@ class Contact extends Component {
                 </fieldset>
               </form>
 
-              <div id="message-warning"> Error boy</div>
-              <div id="message-success">
-                <i className="fa fa-check"></i>Your message was sent, thank you!
-                <br />
-              </div>
             </div>
           </Slide>
 
@@ -121,9 +116,7 @@ class Contact extends Component {
                 <ul id="twitter">
                   <li>
                     <span>
-                      This is Photoshop's version of Lorem Ipsum. Proin gravida
-                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                      quis bibendum auctor, nisi elit consequat ipsum
+                    Working on a new project and loving the simplicity of #ReactJS. Component-based development makes everything so modular and clean! 🔧
                       <a href="./">http://t.co/CGIrdxIlI3</a>
                     </span>
                     <b>
@@ -132,10 +125,7 @@ class Contact extends Component {
                   </li>
                   <li>
                     <span>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi
+                    Web accessibility matters! Don't forget to test your sites with screen readers and follow WCAG guidelines. Everyone deserves a great online experience. ♿️
                       <a href="./">http://t.co/CGIrdxIlI3</a>
                     </span>
                     <b>

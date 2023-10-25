@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import Fade from "react-awesome-reveal";
 import pic1 from "../asset/pic1.jpg";
+import { saveAs } from 'file-saver';
+import sampsonekpotech from '../asset/sampsonekpotech.pdf';
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
+    const downloadResume = () => {
+      saveAs(sampsonekpotech, "sampson.pdf");
+  }
 
     /*const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
@@ -48,6 +53,13 @@ class About extends Component {
                     <span>09167380934</span>
                     <br />
                     <span>sampsonekpo6@gmail.com</span>
+                  </p>
+                </div>
+                <div className="columns download">
+                  <p>
+                    <button onClick={downloadResume} className="button">
+                      <i className="fa fa-download"></i>Download Resume
+                    </button>
                   </p>
                 </div>
                 
