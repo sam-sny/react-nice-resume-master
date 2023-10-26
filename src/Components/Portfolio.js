@@ -33,13 +33,59 @@ class Portfolio extends Component {
               <div
                 id="portfolio-wrapper"
                 className="bgrid-quarters s-bgrid-thirds cf"
+                
               >
                 <div className="portfolio-item">
-                <a className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
-                <a className="item-wrap" href="https://image-play-box.netlify.app/"><img src={ImageGallery} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
-                <a className="item-wrap" href="https://dev.helpmeout.tech/logIn"><img src={LoginUI} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
-                <a className="item-wrap" href="https://on-page-assistant.netlify.app/"><img src={onPage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+
+                <a  className="item-wrap" href="https://movies-discovery.netlify.app/"><img src={Homepage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a  className="item-wrap" href="https://image-play-box.netlify.app/"><img src={ImageGallery} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a  className="item-wrap" href="https://dev.helpmeout.tech/logIn"><img src={LoginUI} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                <a  className="item-wrap" href="https://on-page-assistant.netlify.app/"><img src={onPage} alt="" style={{height:"200px", width:"200px", objectFit:"cover"}} /></a>
+                
                 </div>
+
+{/*<div className="portfolio-item" >
+
+  <a className="item-wrap"  href="https://movies-discovery.netlify.app/">
+    <img src={Homepage} alt="" style={{ height: "200px", width: "200px", objectFit: "cover" }} />
+    <div className="item-info">
+      <h5>Movies Discovery</h5>
+      <p>A website for discovering and exploring movies.</p>
+    </div>
+  </a>
+
+
+
+  <a className="item-wrap" href="https://image-play-box.netlify.app/">
+    <img src={ImageGallery} alt="" style={{ height: "200px", width: "200px", objectFit: "cover" }} />
+    <div className="item-info">
+      <h5>Image Play Box</h5>
+      <p>An image gallery website for viewing and playing with images.</p>
+    </div>
+  </a>
+
+
+
+  <a className="item-wrap" href="https://dev.helpmeout.tech/logIn">
+    <img src={LoginUI} alt="" style={{ height: "200px", width: "200px", objectFit: "cover" }} />
+    <div className="item-info">
+      <h5>Login UI</h5>
+      <p>An interactive login user interface.</p>
+    </div>
+  </a>
+
+
+
+  <a className="item-wrap" href="https://on-page-assistant.netlify.app/">
+    <img src={onPage} alt="" style={{ height: "200px", width: "200px", objectFit: "cover" }} />
+    <div className="item-info">
+      <h5>On-Page Assistant</h5>
+      <p>An assistant tool for on-page tasks.</p>
+    </div>
+  </a>
+
+</div>*/}
+
 
               </div>
             </div>
