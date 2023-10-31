@@ -2,8 +2,56 @@ import React, { Component } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
 class Contact extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      contactName: '',
+      contactEmail: '',
+      contactSubject: '',
+      contactMessage: '',
+    };
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { contactName, contactEmail, contactSubject, contactMessage } = this.state;
+
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ contactName, contactEmail, contactSubject, contactMessage }),
+      });
+      console.log(response);
+      if (response.status === 200) {
+        alert('Email sent successfully');
+      } else {
+        if (response.status === 400) {
+        alert('Error sending contact email');
+      } else if (response.status === 500) {
+        alert('Internal Server Error');
+      } else {
+        alert('Error sending contact email');
+      }
+    }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email');
+    }
+  };
+
   render() {
     if (!this.props.data) return null;
+
+    
 
     /*const name = this.props.data.name;
     const street = this.props.data.address.street;
@@ -32,7 +80,8 @@ class Contact extends Component {
         <div className="row">
       {/*  <Slide left duration={1000}> */}
             <div className="eight columns">
-              <form action="mailto:sampsonekpo6@gmail.com" method="post" id="contactForm" name="contactForm">
+
+              <form action="/send-email" method="post" id="contactForm" name="contactForm" onSubmit={this.handleSubmit}>
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -40,10 +89,10 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
                       size="35"
                       id="contactName"
                       name="contactName"
+                      value={this.state.contactName}
                       onChange={this.handleChange}
                     />
                   </div>
@@ -54,10 +103,10 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
                       size="35"
                       id="contactEmail"
                       name="contactEmail"
+                      value={this.state.contactEmail}
                       onChange={this.handleChange}
                     />
                   </div>
@@ -66,10 +115,10 @@ class Contact extends Component {
                     <label htmlFor="contactSubject">Subject</label>
                     <input
                       type="text"
-                      defaultValue=""
                       size="35"
                       id="contactSubject"
                       name="contactSubject"
+                      value={this.state.contactSubject}
                       onChange={this.handleChange}
                     />
                   </div>
@@ -83,6 +132,8 @@ class Contact extends Component {
                       rows="15"
                       id="contactMessage"
                       name="contactMessage"
+                      value={this.state.contactMessage}
+                      onChange={this.handleChange}
                     ></textarea>
                   </div>
 

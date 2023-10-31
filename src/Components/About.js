@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Fade from "react-awesome-reveal";
 import pic1 from "../asset/pic1.jpg";
 import { saveAs } from 'file-saver';
-import sampsonekpotech from '../asset/sampsonekpotech.pdf';
+import sam_tech_cv from '../asset/sam_tech_cv.pdf';
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
     const downloadResume = () => {
-      saveAs(sampsonekpotech, "sampson.pdf");
+      saveAs(sam_tech_cv, "sampson.pdf");
   }
 
     /*const name = this.props.data.name;
