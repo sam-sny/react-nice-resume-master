@@ -23,25 +23,7 @@ class Contact extends Component {
     const { contactName, contactEmail, contactSubject, contactMessage } = this.state;
 
     try {
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ contactName, contactEmail, contactSubject, contactMessage }),
-      });
-      console.log(response);
-      if (response.status === 200) {
-        alert('Email sent successfully');
-      } else {
-        if (response.status === 400) {
-        alert('Error sending contact email');
-      } else if (response.status === 500) {
-        alert('Internal Server Error');
-      } else {
-        alert('Error sending contact email');
-      }
-    }
+      
     } catch (error) {
       console.error('Error sending email:', error);
       alert('Error sending email');
