@@ -48,8 +48,7 @@ class Contact extends Component {
                       size="35"
                       id="contactName"
                       name="contactName"
-                      value={this.state.contactName}
-                      onChange={this.handleChange}
+                      
                     />
                   </div>
 
@@ -62,9 +61,7 @@ class Contact extends Component {
                       size="35"
                       id="contactEmail"
                       name="contactEmail"
-                      value={this.state.contactEmail}
-                      onChange={this.handleChange}
-                    />
+                      />
                   </div>
 
                   <div>
@@ -74,8 +71,7 @@ class Contact extends Component {
                       size="35"
                       id="contactSubject"
                       name="contactSubject"
-                      value={this.state.contactSubject}
-                      onChange={this.handleChange}
+                      
                     />
                   </div>
 
@@ -88,8 +84,7 @@ class Contact extends Component {
                       rows="15"
                       id="contactMessage"
                       name="contactMessage"
-                      value={this.state.contactMessage}
-                      onChange={this.handleChange}
+                      
                     ></textarea>
                   </div>
 
