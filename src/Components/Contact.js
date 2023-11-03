@@ -3,32 +3,6 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 class Contact extends Component {
   
-  constructor(props) {
-    super(props);
-    this.state = {
-      contactName: '',
-      contactEmail: '',
-      contactSubject: '',
-      contactMessage: '',
-    };
-  }
-
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const { contactName, contactEmail, contactSubject, contactMessage } = this.state;
-
-    try {
-      
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email');
-    }
-  };
 
   render() {
     if (!this.props.data) return null;
