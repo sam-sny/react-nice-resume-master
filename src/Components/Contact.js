@@ -122,7 +122,7 @@ class Contact extends Component {
                       <a href="https://twitter.com/sam_sny1/status/1722184429395652683">https://twitter.com/sam_sny1/status/1722184429395652683</a>
                     </span>
                     <b>
-                      <a href="./">2 Days Ago</a>
+                      <a href="./">November 8th</a>
                     </b>
                   </li>
                   <li>
@@ -131,7 +131,7 @@ class Contact extends Component {
                       <a href="https://twitter.com/sam_sny1/status/1722185121879433706">https://twitter.com/sam_sny1/status/1722185121879433706</a>
                     </span>
                     <b>
-                      <a href="./">3 Days Ago</a>
+                      <a href="./">November 8th</a>
                     </b>
                   </li>
                 </ul>
