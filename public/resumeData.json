@@ -49,30 +49,30 @@
     "skillmessage":"Here are my skills",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"ALX Scholarship",
+        "degree":"Software Engineering",
+        "graduated":"Ongoing",
+        "description":"ALX School provided me with a holistic education that encompasses leadership development, entrepreneurship, soft skills, networking, personal growth, and problem-solving, with a focus on preparing me for successful careers and making a positive impact in Africa and beyond."
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      }
+        "school":"University Of Agriculture Abeokuta",
+        "degree":"Bsc Agriculture",
+        "graduated":"graduated in 2020",
+        "description":"I gained proficiency in various programming languages, which serves as the foundation for developing software and applications. I also gained understanding on how to efficiently organize and manipulate data which is crucial for solving real-world problems and optimizing computer programs."
+      }  
     ],
-    "work":[
+    "experience":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Zuri HNG Internship",
+        "title":"Front end Developer Intern",
+        "years":"Sep 2023 - Oct 2023",
+        "description":"Led the creation of modern, responsive web applications through React.js and Next.js, ensuring pixel-perfect UI/UX design implementation. Applied SEO best practices for enhanced visibility and performance. Conducted code reviews, provided mentorship, and optimized the development workflow. Leveraged RESTful APIs and GraphQL for efficient data retrieval and display."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Zuri HNG Apprenticeship",
+        "title":"Junior FrontEnd bug fixer",
+        "years":"Nov 2023 - Ongoing",
+        "description":"Effectively addressed bugs in the HelpMeOut application while also expanding its capabilities by implementing additional functionalities and user interfaces."
       }
     ],
     "skills":[

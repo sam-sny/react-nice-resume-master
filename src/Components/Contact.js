@@ -119,7 +119,7 @@ class Contact extends Component {
                   <li>
                     <span>
                     Working on a new project and loving the simplicity of #ReactJS. Component-based development makes everything so modular and clean! 🔧
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
+                      <a href="https://twitter.com/sam_sny1/status/1722184429395652683">https://twitter.com/sam_sny1/status/1722184429395652683</a>
                     </span>
                     <b>
                       <a href="./">2 Days Ago</a>
@@ -128,7 +128,7 @@ class Contact extends Component {
                   <li>
                     <span>
                     Web accessibility matters! Don't forget to test your sites with screen readers and follow WCAG guidelines. Everyone deserves a great online experience. ♿️
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
+                      <a href="https://twitter.com/sam_sny1/status/1722185121879433706">https://twitter.com/sam_sny1/status/1722185121879433706</a>
                     </span>
                     <b>
                       <a href="./">3 Days Ago</a>

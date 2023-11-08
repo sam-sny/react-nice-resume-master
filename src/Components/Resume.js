@@ -15,28 +15,31 @@ class Resume extends Component {
     if (!this.props.data) return null;
 
     const skillmessage = this.props.data.skillmessage;
-    const education = (
-          <div key="education">
-          <h3>University Of Agriculture Abeokuta</h3>
+    const education = this.props.data.education.map(function (education) {
+      return (
+        <div key={education.school}>
+          <h3>{education.school}</h3>
           <p className="info">
-            computer-science <span>&bull;</span>
-            <em className="date">graduated in 2020</em>
+            {education.degree} <span>&bull;</span>
+            <em className="date">{education.graduated}</em>
           </p>
-          <p>I gained proficiency in various programming languages, which serves as the foundation for developing software and applications. I also gained understanding on how to efficiently organize and manipulate data which is crucial for solving real-world problems and optimizing computer programs.</p>
-        </div>);
-      
-
-    const work = (
-        <div key="work">
-          <h3>Awesome Design Studio</h3>
-          <p className="info">
-          Senior UX God
-            <span>&bull;</span> <em className="date">March 2017 - February 2018</em>
-          </p>
-          <p>At Awesome Design Studio, I was at the forefront of turning design concepts into seamless, intuitive, and visually stunning web applications. I worked closely with world-class designers and collaborated with cross-functional teams to craft user experiences that set new industry standards.</p>
+          <p>{education.description}</p>
         </div>
       );
-   
+    });
+
+    const experience = this.props.data.experience.map(function (experience) {
+      return (
+        <div key={experience.company}>
+          <h3>{experience.company}</h3>
+          <p className="info">
+            {experience.title}
+            <span>&bull;</span> <em className="date">{experience.years}</em>
+          </p>
+          <p>{experience.description}</p>
+        </div>
+      );
+    });
 
     const skills = this.props.data.skills.map((skills) => {
       const backgroundColor = this.getRandomColor();
@@ -73,11 +76,11 @@ class Resume extends Component {
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-                <span>Work</span>
+                <span>Experience</span>
               </h1>
             </div>
 
-            <div className="nine columns main-col">{work}</div>
+            <div className="nine columns main-col">{experience}</div>
           </div>
         </Slide>
 
